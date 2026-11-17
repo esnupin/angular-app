@@ -1,0 +1,75 @@
+/* Centra el formulario en la pantalla */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Tarjeta del formulario */
+.login-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form h2 {
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+  color: #333333;
+}
+
+/* Entradas de texto */
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #0066cc;
+}
+
+/* Mensaje de error */
+.error {
+  color: #d93025;
+  background-color: #fce8e6;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Botón de envío */
+.login-form button {
+  padding: 0.75rem;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-form button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.login-form button:disabled {
+  background-color: #a0c4e8;
+  cursor: not-allowed;
+}
